@@ -1,0 +1,54 @@
+{
+	"name": "AmazingMartOrderBreakdown",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "markamazingmartAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "OrderBreakdown",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "P1-AmazingMartEU2.xlsx",
+				"container": "markinput"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Order ID",
+				"type": "String"
+			},
+			{
+				"name": "Product Name",
+				"type": "String"
+			},
+			{
+				"name": "Discount",
+				"type": "String"
+			},
+			{
+				"name": "Sales",
+				"type": "String"
+			},
+			{
+				"name": "Profit",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "Sub-Category",
+				"type": "String"
+			}
+		]
+	}
+}

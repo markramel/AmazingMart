@@ -1,0 +1,34 @@
+{
+	"name": "AmazingMartSalesTarget",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "markamazingmartAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "SalesTargets",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "P1-AmazingMartEU2.xlsx",
+				"container": "markinput"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Month of Order Date",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "Target",
+				"type": "String"
+			}
+		]
+	}
+}
