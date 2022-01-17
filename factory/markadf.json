@@ -1,0 +1,9 @@
+{
+	"name": "markadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b7eabd51-da55-4922-8bf7-40f3f69edd7f",
+		"tenantId": "07cc872f-b6e3-487f-834e-25eb4f34ddad"
+	}
+}
